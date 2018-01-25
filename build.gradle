@@ -26,9 +26,13 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'war'
 apply plugin: 'org.springframework.boot'
 
+
+jar {
+    baseName = 'herokutest'
+    version =  '1.0'
+}
 
 repositories {
     mavenCentral()
